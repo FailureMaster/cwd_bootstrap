@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>cwd_revamp</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg">
+        <div class="container-fluid w-92 "><a class="navbar-brand" href="#"><img src="assets/img/logo-150.png"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            
+            <div class="d-flex flex-column w-75">
+                <div class="row ml-auto">
+                    <div class="col">
+                        <ul class="menu-top-list">
+                            <li>ENG | FRE</li>
+                            <li><i class="fa fa-phone-square"></i>647-689-6069</li>
+                            <li><i class="fa fa-calendar"></i>book a call</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse text-uppercase flex-column" id="navcol-1">                
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">WHO WE ARE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">WHAT WE DO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">OUR PPORTFOLIO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">GET IN TOUCH</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <button onclick="window.location.href = 'https://canadianwebdesigns.ca/contact-us';" class="glow-on-hover" type="button"><b>FREE QUOTE</b></button>
+        </div>
+<style>
+    
+    .glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {background-color: blue !important;}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 0px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #0068ff;
+    /*change bg color*/
+    left: 0;
+    top: 0;
+    border-radius: 0px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+</style>
+        </div>
+    </nav>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
